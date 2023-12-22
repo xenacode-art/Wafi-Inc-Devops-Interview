@@ -1,6 +1,6 @@
 provider "google" {
-  credentials = file("<path-to-your-service-account-key>")
-  project     = "<your-gcp-project>"
+  credentials = file("<path-to-the-service-account-key>")
+  project     = "<the-gcp-project>"
   region      = "us-central1"
 }
 
