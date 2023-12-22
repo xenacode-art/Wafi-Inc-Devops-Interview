@@ -1,0 +1,28 @@
+name: 
+ Deploy to GKE
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up GKE
+      uses: google-github-actions/setup-gke@v0.3.0
+      with:
+        cluster_name: my-gke-cluster
+        location: us-central1
+
+    - name: Authenticate with GKE
+      run: gcloud container clusters get-credentials my-gke-cluster --zone us-central1
+
+    - name: Deploy to GKE
+      run: kubectl apply -f k8s/
+
