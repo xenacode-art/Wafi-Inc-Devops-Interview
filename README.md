@@ -38,9 +38,9 @@ This assessment aims to evaluate your ability to implement DevOps practices effe
 
 
 
-**SOLUTION TO QUESTIONS FOR EXPLANATION **
+**SOLUTION TO QUESTIONS FOR EXPLANATION** 
 
-Questions for Explanation:
+**Questions for Explanation:**
 
 1. Scaling the Application within GKE:
 Utilizing the  GKE's node auto-scaling feature to automatically adjust the number of nodes based on demand.
