@@ -38,7 +38,7 @@ This assessment aims to evaluate your ability to implement DevOps practices effe
 
 
 
-SOLUTION TO QUESTIONS FOR EXPLANATION
+**SOLUTION TO QUESTIONS FOR EXPLANATION **
 
 Questions for Explanation:
 
