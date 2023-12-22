@@ -33,3 +33,32 @@ Set up a GitHub Actions workflow for the application to be automatically deploye
 
 
 This assessment aims to evaluate your ability to implement DevOps practices effectively and make informed decisions in configuring and securing a GKE deployment. Feel free to dazzle with your solutions. Good luck!
+
+
+
+
+
+SOLUTION TO QUESTIONS FOR EXPLANATION
+
+Questions for Explanation:
+
+1. Scaling the Application within GKE:
+Utilize GKE's node auto-scaling feature to automatically adjust the number of nodes based on demand.
+ImplementING horizontal pod auto-scaling (HPA) in Kubernetes to automatically adjust the number of pod replicas based on resource utilization.
+
+2. Measures for Reliability on GKE:
+Set up multiple GKE nodes in different zones for high availability.
+Use Kubernetes PodDisruptionBudget to control the disruption caused by voluntary disruptions.
+Implement health checks and readiness probes for application pods to ensure they are serving traffic only when ready.
+
+3. Security Measures:
+Use GKE Private Clusters to restrict access to the cluster's control plane.
+Implement RBAC (Role-Based Access Control) to control access to resources within the cluster.
+Enable VPC-native (Alias IP) Clusters for better network security.
+Utilize Kubernetes Secrets for sensitive data and avoid storing them in version control.
+
+4. Handling Migration, Secrets, and Environment Variables:
+For migration, usING Kubernetes Rolling Updates for zero-downtime deployments is the optimal option here.
+Storing of sensitive data, such as API keys and database passwords, in Kubernetes Secrets is the best security practice.
+Injecting of  environment variables into the application pods using Kubernetes ConfigMaps or Secrets.
+Using a tool like Helm to manage and version Kubernetes manifests,in my experience, makes it easier to manage configurations and updates.
